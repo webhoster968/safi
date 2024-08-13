@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<style>
+img{
+    width: 200px;
+    height: 100%;
+}
+
+.slider2 {
+  background: white;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  */
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.slider2::before,
+.slider2::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 250px;
+  z-index: 2;
+}
+
+.slider2::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider2::before {
+  left: 0;
+  top: 0;
+}
+
+.slider2 .slide-track2 {
+  -webkit-animation: scroll 80s linear infinite;
+  animation: scroll 80s linear infinite;
+  display: flex;
+  width: fit-content;
+}
+
+.slider2 .slide2 {
+  height: 100px;
+  width: 250px;
+  display: flex;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* scroll only 50% */
+    transform: translateX(-50%);
+  }
+}
+
+
+/* second */
+
+
+
+.a {
+  background: white;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  */
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+
+.a::before,
+.a::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 250px;
+  z-index: 2;
+}
+
+.a::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.a::before {
+  left: 0;
+  top: 0;
+}
+
+.b {
+  -webkit-animation: sr 80s linear infinite;
+  animation: sr 80s linear infinite;
+  display: flex;
+  width: fit-content;
+}
+
+.c{
+  height: 100px;
+  width: 250px;
+  display: flex;
+}
+
+@-webkit-keyframes sr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes sr {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    /* scroll only 50% */
+    transform: translateX(0%);
+  }
+}
+</style>
+</head>
+<body>
+    
+
+
+
+    
+
+    <div class="slider2">
+        <div class="slide-track2">
+          <div class="slide2">
+            <img src="agnice.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="aie.jpg" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="arabian industries.png" alt="">      
+          </div>
+          <div class="slide2">      
+            <img src="dx.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="galfar.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="manappat.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="mfar.jpg" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="parisons.png" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="mimw.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="pk.webp" alt="">
+          </div>
+          <div class="slide2">
+            <img src="Pma.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="secura.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="university.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="Krs.png" alt="">
+          </div>
+      
+          <!-- repeat -->
+      
+          <div class="slide2">
+            <img src="agnice.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="aie.jpg" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="arabian industries.png" alt="">      
+          </div>
+          <div class="slide2">      
+            <img src="dx.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="galfar.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="manappat.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="mfar.jpg" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="mfar.jpg" alt="">      
+          </div>
+          <div class="slide2">
+            <img src="mimw.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="pk.webp" alt="">
+          </div>
+          <div class="slide2">
+            <img src="Pma.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="secura.jpg" alt="">
+          </div>
+          <div class="slide2">
+            <img src="university.png" alt="">
+          </div>
+          <div class="slide2">
+            <img src="Krs.png" alt="">
+          </div>
+        </div>
+    </div>
+    
+
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <img src="agnice.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="aie.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="arabian industries.png" alt="">
+            </div>
+            <div class="c">
+                <img src="dx.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="galfar.png" alt="">
+            </div>
+            <div class="c">
+                <img src="Krs.png" alt="">
+            </div>
+            <div class="c">
+                <img src="manappat.png" alt="">
+            </div>
+            <div class="c">
+                <img src="mfar.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="mimw.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="parisons.png" alt="">
+            </div>
+            <div class="c">
+                <img src="pk.webp" alt="">
+            </div>
+            <div class="c">
+                <img src="Pma.png" alt="">
+            </div>
+            <div class="c">
+                <img src="secura.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="university.png" alt="">
+            </div>
+
+
+
+
+            <div class="c">
+                <img src="agnice.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="aie.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="arabian industries.png" alt="">
+            </div>
+            <div class="c">
+                <img src="dx.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="galfar.png" alt="">
+            </div>
+            <div class="c">
+                <img src="Krs.png" alt="">
+            </div>
+            <div class="c">
+                <img src="manappat.png" alt="">
+            </div>
+            <div class="c">
+                <img src="mfar.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="mimw.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="parisons.png" alt="">
+            </div>
+            <div class="c">
+                <img src="pk.webp" alt="">
+            </div>
+            <div class="c">
+                <img src="Pma.png" alt="">
+            </div>
+            <div class="c">
+                <img src="secura.jpg" alt="">
+            </div>
+            <div class="c">
+                <img src="university.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

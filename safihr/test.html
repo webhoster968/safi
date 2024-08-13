@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+
+body{
+	margin: 0;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+	background-color: gray;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+  }
+  
+  .logos:after {
+    right: 0;
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 20s slides infinite linear;
+  }
+  
+  .logos:hover .logo_items {
+    animation-play-state: paused;
+  }
+  @keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logo_items img{
+    height: 100px;
+	width: 200px;
+  }
+	</style>
+</head>
+<body>
+	
+
+	<div class="logos">
+		<div class="logo_items">
+		
+		<img src="agnice.jpg" alt="">
+		<img src="aie.jpg" alt="">
+		<img src="arabian industries.png" alt="">
+		<img src="dx.jpg" alt="">
+		<img src="galfar.png" alt="">
+		<img src="manappat.png" alt="">
+		<img src="mfar.jpg" alt="">
+		
+		</div>
+		  <div class="logo_items">
+		
+		<img src="mimw.jpg" alt="">
+		<img src="parisons.png" alt="">
+		<img src="pk.webp" alt="">
+		<img src="Pma.png" alt="">
+		<img src="secura.jpg" alt="">
+		<img src="university.png" alt="">
+		
+		</div>
+		</div>
+</body>
+</html>
